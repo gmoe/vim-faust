@@ -23,3 +23,10 @@ Or I suppose you could use `Vundle`_ if you're one of those kinds of people.::
 
   Bundle 'gmoe/vim-faust'
   :BundleInstall
+
+TODO
+====
+
+* MathDoc support
+* LaTeX support within MathDoc
+* Fix over-eager highlighting for the , operator
