@@ -4,7 +4,10 @@
 " Maintainer:   Griffin Moe <me@griffinmoe.com>
 " Version:	1.0
 
-" remove any old syntax stuff hanging around
+if exists("b:current_syntax")
+  finish
+endif
+
 syn clear
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -61,6 +64,10 @@ syn match fstAoperator	"("
 syn match fstAoperator	")" 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Faust MathDoc
+syn region  fstMDoc             start=+<mdoc>+   end=+</mdoc>+ fold contains=fstMDocDirec 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " String
 syn region fstString	start=+"+ skip=+\\\\\|\\"+ end=+"+
 
@@ -74,6 +81,7 @@ let b:current_syntax = "faust"
 
 hi link fstPreProc      PreProc
 hi link fstComment	Comment
+hi link fstMDoc         Comment
 hi link fstAoperator	Special
 hi link fstUIElements   Function
 hi link fstPrims	Label

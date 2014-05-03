@@ -1,0 +1,24 @@
+*faust.txt* Syntax highlighter plugin for the Faust programming language.
+*faust*
+             _    ___                 ______                 __ 
+            | |  / (_)___ ___        / ____/___ ___  _______/ /_
+            | | / / / __ `__ \______/ /_  / __ `/ / / / ___/ __/
+            | |/ / / / / / / /_____/ __/ / /_/ / /_/ (__  ) /_  
+            |___/_/_/ /_/ /_/     /_/    \__,_/\__,_/____/\__/ 
+
+            Created by: Bjoern Lindig <kebjoern@yahoo.de>
+            Maintained by: Griffin Moe <me@griffinmoe.com>
+            Available at: github.com/gmoe/vim-faust
+
+==============================================================================
+INTRODUCTION                                                      *faust-intro*
+
+This is a minimal syntax-highlighting Vim plugin for the Faust programming
+language. I am not a huge fan of giant, complicated language plugins and this
+plugin is no exception. There are a few settings below (|faust-settings|) that 
+might be useful for some people and nothing more.
+
+==============================================================================
+SETTINGS                                                       *faust-settings*
+
+ vim:tw=78:sw=4:ft=help:norl:
