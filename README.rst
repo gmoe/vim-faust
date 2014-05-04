@@ -8,6 +8,15 @@ on the files in the Faust repository with a few improvements. I am not quite don
 the changes I want, but for now this repo makes it a little easier to get Faust syntax
 hightlighting without having to dig through their repo.
 
+Improvements
+------------
+
+* MathDoc support
+* Separated UI elements and primitives into different highlighting categories
+* Label metadata 
+* Improved integer and decimal recognition 
+* Fixed forward slash recognition
+
 Installation
 ============
 
@@ -27,6 +36,5 @@ Or I suppose you could use `Vundle`_ if you're one of those kinds of people.::
 TODO
 ====
 
-* MathDoc support
-* LaTeX support within MathDoc
+* Improve LaTeX support within MathDoc
 * Fix over-eager highlighting for the , operator
