@@ -26,6 +26,8 @@ Here are some examples of Faust highlighting using the `Solarized`_ colorscheme:
 .. image:: http://griffinmoe.com/images/vim-faust/solarized_cap.png
    :align: center
 
+Here is an example of the recently added *mathdoc* highlighting:
+
 .. image:: http://griffinmoe.com/images/vim-faust/solarized_mdoc_cap.png
    :align: center
 
