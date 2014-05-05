@@ -2,6 +2,7 @@ Vim-Faust
 =========
 
 .. _Faust: http://faust.grame.fr/
+.. _Solarized: http://ethanschoonover.com/solarized
 
 This is Vim syntax-highlighting plugin for the `Faust`_ programming language. It is based
 on the files in the Faust repository with a few improvements. I am not quite done adding
@@ -16,6 +17,17 @@ Improvements
 * Label metadata 
 * Improved integer and decimal recognition 
 * Fixed forward slash recognition
+
+Screen Captures
+---------------
+
+Here are some examples of Faust highlighting using the `Solarized`_ colorscheme:
+
+.. image:: http://griffinmoe.com/images/vim-faust/solarized_cap.png
+   :align: center
+
+.. image:: http://griffinmoe.com/images/vim-faust/solarized_mdoc_cap.png
+   :align: center
 
 Installation
 ============
