@@ -70,7 +70,7 @@ syn region	fstComment	start="/\*" end="\*/" contains=fstOperator keepend extend
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " String
-syn region fstString	start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=fstStringMeta
+syn region fstString	start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=fstStringMeta keepend
 syn region fstStringMeta start=+\[+ end=+\]+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
