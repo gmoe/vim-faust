@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Vim-Faust by gmoe</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/gmoe/vim-faust">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/gmoe/vim-faust/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/gmoe/vim-faust/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Vim-Faust</h1>
+          <p>This is a Vim syntax-highlighting plugin for Faust based on the original file in the Faust repository.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/gmoe">gmoe</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="vim-faust" class="anchor" href="#vim-faust"><span class="octicon octicon-link"></span></a>Vim-Faust</h1>
+
+<p>This is Vim syntax-highlighting plugin for the <a href="http://faust.grame.fr/">Faust</a> programming language. It is based
+on the syntax file in the Faust repository and includes a few additions. I am improving my
+Regular Expressions skills as I go along, so please feel free to contribute.</p>
+
+<h2>
+<a name="additions" class="anchor" href="#additions"><span class="octicon octicon-link"></span></a>Additions</h2>
+
+<ul>
+<li>MathDoc support</li>
+<li>Separated UI elements and primitives into different highlighting categories</li>
+<li>Label metadata </li>
+<li>Improved integer and decimal recognition </li>
+<li>Fixed forward slash recognition</li>
+</ul><h2>
+<a name="screen-captures" class="anchor" href="#screen-captures"><span class="octicon octicon-link"></span></a>Screen Captures</h2>
+
+<p>Here are some examples of Faust highlighting using the <a href="http://ethanschoonover.com/solarized">Solarized</a> colorscheme:</p>
+
+<p><img src="http://griffinmoe.com/images/vim-faust/solarized_cap.png" alt="Highlighting example"></p>
+
+<p>Here is an example of the recently added <code>mathdoc</code> highlighting:</p>
+
+<p><img src="http://griffinmoe.com/images/vim-faust/solarized_mdoc_cap.png" alt="Mathdoc example"></p>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>I definitely recommend using <a href="https://github.com/tpope/vim-pathogen">Pathogen</a> if you are not already:</p>
+
+<pre><code>$ cd ~/.vim/bundle
+$ git clone https://github.com/gmoe/vim-faust.git
+</code></pre>
+
+<p>Or I suppose you could use <a href="https://github.com/gmarik/vundle">Vundle</a> if you're one of those kinds of people:</p>
+
+<pre><code>Bundle 'gmoe/vim-faust'
+:BundleInstall
+</code></pre>
+
+<h1>
+<a name="future-additions" class="anchor" href="#future-additions"><span class="octicon octicon-link"></span></a>Future Additions</h1>
+
+<ul>
+<li>Improve LaTeX support within MathDoc</li>
+<li>Fix over-eager highlighting for the , operator</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
