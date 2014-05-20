@@ -11,13 +11,15 @@ syn match mdocTags +</\?mdoc>+
 syn match mdocTags +</\?equation>+ 
 syn match mdocTags +</\?diagram>+ 
 syn match mdocTags +</\?metadata>+ 
-syn match mdocTags +<notice/>+ 
-syn match mdocTags +<listing/>+  
+syn region mdocTags start=+<listing+ end=+/>+
+syn region mdocTags start=+<notice+ end=+/>+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MathDoc LaTeX directives
-syn region mdocLatex start=+\\+ end=+}+
+syn region mdocLatex start="\\" end="}" keepend extend contains=latexText
+syn region latexText start="{" end="}" 
 
 " Define colors
 hi link mdocTags    Comment
 hi link mdocLatex   Comment
+hi link latexText   Ignore
