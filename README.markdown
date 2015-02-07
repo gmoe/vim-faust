@@ -41,8 +41,8 @@ I definitely recommend using [Pathogen][] if you are not already:
 
 Or I suppose you could use [Vundle][] if you're one of those kinds of people:
 
-    Bundle 'gmoe/vim-faust'
-    :BundleInstall
+    Plugin 'gmoe/vim-faust'
+    :PluginInstall
 
 Future Additions
 ================
