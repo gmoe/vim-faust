@@ -17,17 +17,6 @@ Additions
 * Improved integer and decimal recognition 
 * Fixed forward slash recognition
 
-Screen Captures
----------------
-
-Here are some examples of Faust highlighting using the [Solarized][] colorscheme:
-
-![Highlighting example](http://griffinmoe.com/images/vim-faust/solarized_cap.png)
-
-Here is an example of the recently added `mathdoc` highlighting:
-
-![Mathdoc example](http://griffinmoe.com/images/vim-faust/solarized_mdoc_cap.png)
-
 Installation
 ============
 
