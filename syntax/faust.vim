@@ -1,9 +1,9 @@
 " Faust syntax file
-" Language:	Faust - http://faust.grame.fr
-" Creator:	Bjoern Lindig <kebjoern@yahoo.de>
-" Maintainer:   Griffin Moe <me@griffinmoe.com>
-" Homepage:     http://github.com/gmoe/vim-faust
-" Version:	1.0
+" Language: Faust - http://faust.grame.fr
+" Creator: Bjoern Lindig <kebjoern@yahoo.de>
+" Maintainer: Griffin Moe <me@griffinmoe.com>
+" Homepage: http://github.com/gmoe/vim-faust
+" Version: 1.0
 
 if exists("b:current_syntax")
   finish
@@ -32,45 +32,45 @@ syn keyword fstOps process with case seq par sum prod
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Faust Operators "TODO": Improve this...
-syn match fstOperator   "@"
-syn match fstOperator	"_" 
-syn match fstOperator	"!" 
-syn match fstOperator	"+" 
-syn match fstOperator	"-" 
-syn match fstOperator	"*" 
-syn match fstOperator	"/" 
-syn match fstOperator	"%" 
-syn match fstOperator	"<" 
-syn match fstOperator	">" 
-syn match fstOperator	">=" 
-syn match fstOperator	"<=" 
-syn match fstOperator	"!=" 
-syn match fstOperator	"==" 
-syn match fstOperator	"&" 
-syn match fstOperator	"\^" 
-syn match fstOperator	"|" 
-syn match fstOperator	"<<" 
-syn match fstOperator	">>" 
-syn match fstOperator	":" 
-syn match fstOperator	"," 
-syn match fstOperator	"<:" 
-syn match fstOperator	":>" 
-syn match fstOperator	"\~" 
+syn match fstOperator "@"
+syn match fstOperator "_"
+syn match fstOperator "!"
+syn match fstOperator "+"
+syn match fstOperator "-"
+syn match fstOperator "*"
+syn match fstOperator "/"
+syn match fstOperator "%"
+syn match fstOperator "<"
+syn match fstOperator ">"
+syn match fstOperator ">="
+syn match fstOperator "<="
+syn match fstOperator "!="
+syn match fstOperator "=="
+syn match fstOperator "&"
+syn match fstOperator "\^"
+syn match fstOperator "|"
+syn match fstOperator "<<"
+syn match fstOperator ">>"
+syn match fstOperator ":"
+syn match fstOperator ","
+syn match fstOperator "<:"
+syn match fstOperator ":>"
+syn match fstOperator "\~"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Faust Brackets
-syn match fstAoperator	"(" 
-syn match fstAoperator	")" 
-syn match fstAoperator  "="
+syn match fstAoperator "("
+syn match fstAoperator ")"
+syn match fstAoperator "="
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Faust Comments
-syn match	fstComment	"//.*$"
-syn region	fstComment	start="/\*" end="\*/" contains=fstOperator keepend extend
+syn match fstComment "//.*$"
+syn region fstComment start="/\*" end="\*/" contains=fstOperator keepend extend
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " String
-syn region fstString	start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=fstStringMeta keepend
+syn region fstString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=fstStringMeta keepend
 syn region fstStringMeta start=+\[+ end=+\]+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -80,21 +80,21 @@ syn match fstNumber "\<\d\+\(\.\d\+\)\=\>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Faust MathDoc
 syn include @MDoc <sfile>:p:h/mdoc.vim
-syn region  fstMDoc     start=+<mdoc>+ end=+</mdoc>+ fold keepend contains=@MDoc
+syn region fstMDoc start=+<mdoc>+ end=+</mdoc>+ fold keepend contains=@MDoc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color Definitions
 let b:current_syntax = "faust"
 
-hi link fstPreProc      PreProc
-hi link fstMDoc         Ignore
-hi link fstComment	Comment
-hi link fstAoperator	Special
-hi link fstUIElements   Function
-hi link fstPrims	Label
-hi link fstOps		Type
-hi link fstOperator	Keyword
-hi link fstString	String
-hi link fstStringMeta   Underlined
-hi link fstNumber       Number
-hi link fstFloat        Float
+hi link fstPreProc PreProc
+hi link fstMDoc Ignore
+hi link fstComment Comment
+hi link fstAoperator Special
+hi link fstUIElements Function
+hi link fstPrims Label
+hi link fstOps Type
+hi link fstOperator Keyword
+hi link fstString String
+hi link fstStringMeta Underlined
+hi link fstNumber Number
+hi link fstFloat Float
