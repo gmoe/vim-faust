@@ -1,13 +1,8 @@
-*.aux
-*.log
-*.out
-*.rai
-*.rao
-*.toc
-*.o
-*.mxo
-*.bak
-*.app
+# Temporary files
 .DS_Store
-*tmp*
-*dir*
+*.swo
+*.swp
+*.bak
+
+# Dev
+examples/
