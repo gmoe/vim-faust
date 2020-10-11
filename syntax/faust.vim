@@ -31,8 +31,8 @@ syn match mdocFence +</\?mdoc>+ containedin=fstMDoc contained
 syn match mdocTags +</\?equation>+ containedin=fstMDoc contained
 syn match mdocTags +</\?diagram>+ containedin=fstMDoc contained
 syn match mdocTags +</\?metadata>+ containedin=fstMDoc contained
-syn region mdocTags start=+<listing+ end=+/>+
-syn region mdocTags start=+<notice+ end=+/>+
+syn region mdocTags start=+<listing+ end=+/>+ containedin=fstMDoc contained
+syn region mdocTags start=+<notice+ end=+/>+ containedin=fstMDoc contained
 syn region fstMDoc start=+<mdoc>+ end=+</mdoc>+ matchgroup=mdocFence fold keepend contains=@TeX,mdocTags
 
 " Primitives --------------
