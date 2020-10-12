@@ -45,12 +45,12 @@ syn match fstSplitMetaSpecifier ":" contained
 syn region fstSubString start=+'+ skip=+\\\\\|\\'+ end=+'+ contained keepend
 
 syn match fstWaveformAssignment /waveform{[0-9.,]\+}/ contains=fstWaveformSequnce,fstWaveformKeyword
-syn region fstWaveformSequence start=/{/ contains=fstNumber skip=/,/ end=/}/ contained
-syn keyword fstWaveformKeyword waveform contained nextgroup=fstWaveformSequence
+syn region fstWaveformSequence start=/{/ containedin=fstWaveformAssignment contains=fstNumber skip=/,/ end=/}/ contained
+syn keyword fstWaveformKeyword waveform containedin=fstWaveformAssignment contained nextgroup=fstWaveformSequence
 
 syn match fstSoundfileAssignment /soundfile(.\+)/ contains=fstSoundfilePaths,fstSoundfileKeyword
-syn region fstSoundfilePaths start=/(/ end=/)/ contained contains=fstString
-syn keyword fstSoundfileKeyword soundfile contained nextgroup=fstSoundfilePaths
+syn region fstSoundfilePaths start=/(/ end=/)/ contained containedin=fstSoundfileAssignment contains=fstString
+syn keyword fstSoundfileKeyword soundfile contained containedin=fstSoundfileAssignment nextgroup=fstSoundfilePaths
 
 " Operations -------------
 syn match fstDiagramOp /[,~:]|(:>)|(<:)/ skipwhite skipempty nextgroup=@fstExpression
