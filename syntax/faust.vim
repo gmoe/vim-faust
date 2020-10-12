@@ -39,8 +39,8 @@ syn region fstMDoc start=+<mdoc>+ end=+</mdoc>+ matchgroup=mdocFence fold keepen
 syn match fstNumber "\<\d\+\(\.\d\+\)\=\>"
 
 syn region fstString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=fstStringMeta keepend
-syn region fstStringMeta start=+\[+ end=+\]+ contains=fstSplitMetaSpecifier,fstSubString
-syn region fstStringMeta start=+{+ end=+}+ contains=fstSplitMetaSpecifier,fstSubString
+syn region fstStringMeta start=+\[+ end=+\]+ contained containedin=fstString contains=fstSplitMetaSpecifier,fstSubString
+syn region fstStringMeta start=+{+ end=+}+ contained containedin=fstString contains=fstSplitMetaSpecifier,fstSubString
 syn match fstSplitMetaSpecifier ":" contained
 syn region fstSubString start=+'+ skip=+\\\\\|\\'+ end=+'+ contained keepend
 
